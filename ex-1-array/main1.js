@@ -18,8 +18,8 @@ var login = false;
 
 for (var i = 0; i < email_registrate.length; i++) {
   var mail_login = email_registrate[i];
+  console.log(email_registrate[i]);
 
-//Email_utente corretta STAMPARE ACCESSO CONSENTITO
 
 if (email_utente == mail_login){
   login = true;
@@ -27,19 +27,14 @@ if (email_utente == mail_login){
 }
 if (login){
 
+  // STAMPARE ACCESSO CONSENTITO
   login = true;
   document.writeln('ACCESSO CONSENTITO');
 
 }
 
 else {
-
+    // STAMPARE MESSAGGIO ACCESSO NEGATO
     login = false;
     document.writeln('ACCESSO NON CONSENTITO');
 }
-
-//Email_utente non Registrata
-
-// else if
-
-// STAMPARE MESSAGGIO ACCESSO NEGATO
