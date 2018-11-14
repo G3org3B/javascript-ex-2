@@ -4,17 +4,18 @@
 
 //IMPOSTARE LE VARIABILI
 var tiro_player1;
+
 var tiro_player2;
 
 //IMPOSTARE DUE RANDOM OGNUNO PER UNO TIRO DIVERSO
 
 var tiro_player1 = Math.floor(Math.random() * 7);
-console.log(Math.floor(Math.random() * 7));
-document.writeln(tiro_player1);
+//console.log(Math.floor(Math.random() * 7));
+document.getElementById('player1').innerHTML = tiro_player1;
 
 var tiro_player2 = Math.floor(Math.random() * 7);
-console.log(Math.floor(Math.random() * 7));
-document.writeln(tiro_player2);
+//console.log(Math.floor(Math.random() * 7));
+document.getElementById('player2').innerHTML = tiro_player2;
 
 var riprova_tiro = tiro_player1 == tiro_player2;
 
@@ -23,15 +24,15 @@ var riprova_tiro = tiro_player1 == tiro_player2;
 // PARITA'
 if (riprova_tiro) {
 
-  document.writeln("riprovare il tiro");
+  document.getElementById('Score').innerHTML ="Riprovare il Tiro";
 }
 // VINCITA'
 if (tiro_player1 > tiro_player2) {
 console.log();
-  document.writeln("il player1 ha vinto");
+  document.getElementById('Score').innerHTML ="Il PLAYER 1 HA VINTO";
 }
 // SCONFITTA
 else {
 
-  document.writeln("il player2 ha vinto");
+  document.getElementById('Score').innerHTML ="Il PLAYER 2 HA VINTO";
 }
