@@ -21,11 +21,7 @@ var riprova_tiro = tiro_player1 == tiro_player2;
 
 // CONFRONTO TRA I DUE TIRI
 
-// PARITA'
-if (riprova_tiro) {
 
-  document.getElementById('Score').innerHTML ="Riprovare il Tiro";
-}
 // VINCITA'
 if (tiro_player1 > tiro_player2) {
 console.log();
@@ -35,4 +31,10 @@ console.log();
 else {
 
   document.getElementById('Score').innerHTML ="Il PLAYER 2 HA VINTO";
+}
+
+// parità
+if (riprova_tiro) {
+
+  document.getElementById('Score').innerHTML ="Riprovare il Tiro";
 }
